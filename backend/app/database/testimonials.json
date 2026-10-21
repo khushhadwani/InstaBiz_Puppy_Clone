@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fam-1",
+    "clientName": "Sarah & Omar",
+    "location": "Palm Jumeirah, Dubai",
+    "puppyName": "Mochi (Maltipoo)",
+    "quote": "Bringing Mochi home was the best decision we ever made. The team at TeddyPups made the process so warm and seamless!",
+    "imageUrl": "/media/xaIi_2gMoj_N/27123a3e2c/27b888_3375199e717a4f6ca02e902672664e79-mv2.jpg"
+  },
+  {
+    "id": "fam-2",
+    "clientName": "The Al Maktoum Family",
+    "location": "Downtown Dubai",
+    "puppyName": "Bella (Teacup Pomeranian)",
+    "quote": "Bella is an absolute angel. Healthy, active, and so loving. Thank you TeddyPups for our newest family member!",
+    "imageUrl": "/media/yEfM9sdMluCX/46ecd570ef/edb2f5_099acc542ba14359aa8c0f933cb4ef2c-mv2.jpeg"
+  },
+  {
+    "id": "fam-3",
+    "clientName": "Elena & David",
+    "location": "Dubai Marina",
+    "puppyName": "Coco (Toy Poodle)",
+    "quote": "From our visit to the Downtown showroom to the home delivery, the white-glove service was top tier.",
+    "imageUrl": "/media/xHEMhVTwflC_/8859dd626c/b942a5_65113182432144f49bd50bb009e7d88c-mv2.jpg"
+  },
+  {
+    "id": "fam-4",
+    "clientName": "Rashid K.",
+    "location": "Jumeirah Golf Estates",
+    "puppyName": "Teddy (Cavapoo)",
+    "quote": "Our Korean import arrived safely with all paperwork, passports, and health checks completely in order.",
+    "imageUrl": "/media/wyDhW6yEQ6ef/e012615aab/b942a5_9381a9a0ca3e40b4b4f31906cf7fda56-mv2.png"
+  }
+]

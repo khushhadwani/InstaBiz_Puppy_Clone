@@ -1,0 +1,196 @@
+[
+  {
+    "id": "4218427a-dd65-4b09-a089-584b912aa7ab",
+    "slug": "maltipoo-max-male",
+    "name": "Max",
+    "displayName": "Max",
+    "breed": "Maltipoo",
+    "gender": "male",
+    "genderLabel": "Boy",
+    "age": "3 months",
+    "colour": "",
+    "description": "",
+    "records": [],
+    "status": "available",
+    "featured": false,
+    "seoDescription": "",
+    "cover": {
+      "id": "Z0ToauDx7Eve",
+      "url": "/media/Z0ToauDx7Eve/5fffe4d022/b942a5_4b8cfb8204d24eadaf524332aba1dc15-mv2.webp",
+      "kind": "image",
+      "width": 607,
+      "height": 700,
+      "alt": "Max, male Maltipoo puppy",
+      "caption": "",
+      "focalX": 0.538,
+      "focalY": 0.443,
+      "color": "#785838",
+      "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoOABAAA4BaJaACdADDh2BzkBgYAP7fiDE/p2cnGzv1iHeb8jE5aJgBJQmybF8YoVvvRHe4nUN9iSUxSGyKrEJHcsPXH+aABXyOu+rsgZDA2WKHZDyt4AAA",
+      "durationS": null,
+      "poster": null
+    },
+    "media": [
+      {
+        "id": "Z0ToauDx7Eve",
+        "url": "/media/Z0ToauDx7Eve/5fffe4d022/b942a5_4b8cfb8204d24eadaf524332aba1dc15-mv2.webp",
+        "kind": "image",
+        "width": 607,
+        "height": 700,
+        "alt": "Max, male Maltipoo puppy",
+        "caption": "",
+        "focalX": 0.538,
+        "focalY": 0.443,
+        "color": "#785838",
+        "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoOABAAA4BaJaACdADDh2BzkBgYAP7fiDE/p2cnGzv1iHeb8jE5aJgBJQmybF8YoVvvRHe4nUN9iSUxSGyKrEJHcsPXH+aABXyOu+rsgZDA2WKHZDyt4AAA",
+        "durationS": null,
+        "poster": null
+      },
+      {
+        "id": "jNYYlZcF2IuE",
+        "url": "/media/jNYYlZcF2IuE/61af7a5e09/b942a5_a1fa75c7bf2f4d688ec0ce0344baef67.mp4",
+        "kind": "video",
+        "width": 576,
+        "height": 1024,
+        "alt": "Video of Max, male Maltipoo puppy",
+        "caption": "",
+        "focalX": 0.5,
+        "focalY": 0.42,
+        "color": "#f2be6b",
+        "blurDataUrl": null,
+        "durationS": 3.97,
+        "poster": {
+          "id": "RH7J577OfQ7f",
+          "url": "/media/RH7J577OfQ7f/e776d07dbd/b942a5_a1fa75c7bf2f4d688ec0ce0344baef67f000.jpg",
+          "kind": "image",
+          "width": 576,
+          "height": 1024,
+          "alt": "Max, male Maltipoo puppy",
+          "caption": "",
+          "focalX": 0.571,
+          "focalY": 0.446,
+          "color": "#c8c8b8",
+          "blurDataUrl": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoJABAAA4BaJQBOgBuDxFKkgeXAAP7tgskcW3xGg1yYBPMNLZOfswca2sezIeQ11k2zvdAQD3fa+RJKTuahpuQAAAA=",
+          "durationS": null,
+          "poster": null
+        }
+      }
+    ],
+    "origin": {
+      "slug": "imported",
+      "name": "Imported"
+    },
+    "collections": [],
+    "breeds": [
+      {
+        "slug": "maltipoo",
+        "name": "Maltipoo"
+      }
+    ],
+    "published": true
+  },
+  {
+    "id": "e486e544-f1fd-48f9-8ba0-f556d7ee44e7",
+    "slug": "copper-male",
+    "name": "Copper",
+    "displayName": "Copper",
+    "breed": "Cavapoo",
+    "gender": "male",
+    "genderLabel": "Boy",
+    "age": "2 months",
+    "colour": "",
+    "description": "",
+    "records": [],
+    "status": "available",
+    "featured": false,
+    "seoDescription": "",
+    "cover": {
+      "id": "O-6w4FYqE10j",
+      "url": "/media/O-6w4FYqE10j/be76f399cc/b942a5_bb73ebbb952047988f944f3a8e3052bd-mv2.jpg",
+      "kind": "image",
+      "width": 836,
+      "height": 1280,
+      "alt": "Copper, male Cavapoo puppy",
+      "caption": "",
+      "focalX": 0.43,
+      "focalY": 0.505,
+      "color": "#e8d8c8",
+      "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoKABAAA4BaJbACdADMqojjOocAAP7PZYKA+Lu8lWU7z7yQUWO6xMkMk/OmshQ8mZA+f3Evp0OojmSqKnf21Ul3U75HVD+vAEFXGeTLuWPRnUH/DhavO7O6WL+rV4ghxAA=",
+      "durationS": null,
+      "poster": null
+    },
+    "media": [
+      {
+        "id": "O-6w4FYqE10j",
+        "url": "/media/O-6w4FYqE10j/be76f399cc/b942a5_bb73ebbb952047988f944f3a8e3052bd-mv2.jpg",
+        "kind": "image",
+        "width": 836,
+        "height": 1280,
+        "alt": "Copper, male Cavapoo puppy",
+        "caption": "",
+        "focalX": 0.43,
+        "focalY": 0.505,
+        "color": "#e8d8c8",
+        "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoKABAAA4BaJbACdADMqojjOocAAP7PZYKA+Lu8lWU7z7yQUWO6xMkMk/OmshQ8mZA+f3Evp0OojmSqKnf21Ul3U75HVD+vAEFXGeTLuWPRnUH/DhavO7O6WL+rV4ghxAA=",
+        "durationS": null,
+        "poster": null
+      },
+      {
+        "id": "57IVFGZFRSJ1",
+        "url": "/media/57IVFGZFRSJ1/70ec15d562/b942a5_2c13cdda0a174e33b22cf65063e1aa7f-mv2.jpg",
+        "kind": "image",
+        "width": 828,
+        "height": 1280,
+        "alt": "Copper, male Cavapoo puppy, photo 2",
+        "caption": "",
+        "focalX": 0.478,
+        "focalY": 0.433,
+        "color": "#e8c8a8",
+        "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwAgCdASoKABAAA4BaJbACdADp9NKde7HLAAD5fFSq6k6DysMgeCG7K2NnZp2aXIJhUQa3Mva2CwJft3tR+n28ejBNn0dvKk8EW1MhAhzJt9NZUlZXX12LPfNytzfzPaOD+0L5Y8JhbkTkgAA=",
+        "durationS": null,
+        "poster": null
+      },
+      {
+        "id": "2stMgxztsgXb",
+        "url": "/media/2stMgxztsgXb/8b643b4842/b942a5_ce135cde6ebe45abb75435a7ce7d6910-mv2.jpg",
+        "kind": "image",
+        "width": 904,
+        "height": 1280,
+        "alt": "Copper, male Cavapoo puppy, photo 3",
+        "caption": "",
+        "focalX": 0.501,
+        "focalY": 0.417,
+        "color": "#e8d8c8",
+        "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoLABAAA4BaJbACdAEWPa7u0oXDAAD+zQgkhEL9UgBhef1zLU6bnrSKecjeYeoRSm3Pr82Rh+Xcb/4VIkMP7SzZyRITtuFBSaFyQQD2FTRBJWcytfr6Bcft8NrXnprgAAA=",
+        "durationS": null,
+        "poster": null
+      },
+      {
+        "id": "objS5G36nXH0",
+        "url": "/media/objS5G36nXH0/4d398662f6/b942a5_f29547489be747e597ed20c191e1f24c-mv2.jpg",
+        "kind": "image",
+        "width": 870,
+        "height": 1280,
+        "alt": "Copper, male Cavapoo puppy, photo 4",
+        "caption": "",
+        "focalX": 0.526,
+        "focalY": 0.451,
+        "color": "#e8d8d8",
+        "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwAgCdASoLABAAA4BaJbACdAEeuywGbHl4AAD+wgkXH8ji7W0d12oOkjgnqi9c7H9PEmZz0MYowSMZ3zNUcPU/4LD3dIUQf9AjLmD5e4r5f5XVvXwRSYsjmYZs7h9dDSsIDBXj2CItbs2uxAAAAA==",
+        "durationS": null,
+        "poster": null
+      }
+    ],
+    "origin": {
+      "slug": "imported",
+      "name": "Imported"
+    },
+    "collections": [],
+    "breeds": [
+      {
+        "slug": "cavapoo",
+        "name": "Cavapoo"
+      }
+    ],
+    "published": true
+  }
+]
