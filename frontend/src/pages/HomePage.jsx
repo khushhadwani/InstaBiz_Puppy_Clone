@@ -62,7 +62,7 @@ export default function HomePage() {
               </h2>
             </div>
             <Link to="/puppies" className="btn btn-outline">
-              View all 25+ puppies →
+              View all available puppies →
             </Link>
           </div>
 

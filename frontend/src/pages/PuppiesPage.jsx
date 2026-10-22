@@ -1,48 +1,88 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import PuppyCard from '../components/common/PuppyCard';
 import PuppyFilterBar from '../components/common/PuppyFilterBar';
 import { getPuppies } from '../services/api';
 
 export default function PuppiesPage() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const breedFromUrl = searchParams.get('breed') || 'all';
+
   const [puppies, setPuppies] = useState([]);
-  const [selectedBreed, setSelectedBreed] = useState('all');
+  const [selectedBreed, setSelectedBreed] = useState(breedFromUrl);
   const [selectedStatus, setSelectedStatus] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
+
+  // Sync with URL params if breed changes via navigation
+  useEffect(() => {
+    const urlBreed = searchParams.get('breed');
+    if (urlBreed && urlBreed !== selectedBreed) {
+      setSelectedBreed(urlBreed);
+    }
+  }, [searchParams]);
 
   useEffect(() => {
     async function load() {
       setLoading(true);
       const data = await getPuppies();
-      setPuppies(data);
+      // Ensure only valid puppy objects are stored
+      const valid = Array.isArray(data) ? data.filter(p => p && p.slug) : [];
+      setPuppies(valid);
       setLoading(false);
     }
     load();
   }, []);
 
+  const handleBreedChange = (breedId) => {
+    setSelectedBreed(breedId);
+    if (breedId === 'all') {
+      searchParams.delete('breed');
+      setSearchParams(searchParams, { replace: true });
+    } else {
+      setSearchParams({ ...Object.fromEntries(searchParams.entries()), breed: breedId }, { replace: true });
+    }
+  };
+
   const filteredPuppies = puppies.filter((p) => {
+    if (!p) return false;
+
     // Breed filter
     if (selectedBreed !== 'all') {
-      const b = p.breed.toLowerCase();
-      if (selectedBreed === 'maltipoo' && !b.includes('maltipoo')) return false;
-      if (selectedBreed === 'korean-teacup' && !p.name.toLowerCase().includes('korean') && !p.slug.includes('korean')) return false;
-      if (selectedBreed === 'poodle' && !b.includes('poodle')) return false;
-      if (selectedBreed === 'pomeranian' && !b.includes('pomeranian')) return false;
-      if (selectedBreed === 'shih-tzu' && !b.includes('shih') && !b.includes('shitzu')) return false;
-      if (selectedBreed === 'cavapoo' && !b.includes('cavapoo')) return false;
+      const b = (p.breed || '').toLowerCase();
+      const slug = (p.slug || '').toLowerCase();
+      const name = (p.name || '').toLowerCase();
+      const breedSlugs = (p.breeds || []).map((br) => (br.slug || '').toLowerCase());
+
+      if (selectedBreed === 'maltipoo') {
+        if (!b.includes('maltipoo') && !breedSlugs.includes('maltipoo')) return false;
+      } else if (selectedBreed === 'korean-teacup') {
+        const isKorean = b.includes('korean') || slug.includes('korean') || name.includes('korean');
+        if (!isKorean) return false;
+      } else if (selectedBreed === 'poodle') {
+        if (!b.includes('poodle') && !breedSlugs.includes('poodle')) return false;
+      } else if (selectedBreed === 'pomeranian') {
+        if (!b.includes('pomeranian') && !breedSlugs.includes('pomeranian')) return false;
+      } else if (selectedBreed === 'shih-tzu') {
+        if (!b.includes('shih') && !b.includes('shitzu') && !slug.includes('shitzu') && !breedSlugs.includes('shih-tzu')) return false;
+      } else if (selectedBreed === 'cavapoo') {
+        if (!b.includes('cavapoo') && !breedSlugs.includes('cavapoo')) return false;
+      }
     }
+
     // Status filter
     if (selectedStatus !== 'all') {
-      if (p.status !== selectedStatus) return false;
+      if ((p.status || '').toLowerCase() !== selectedStatus.toLowerCase()) return false;
     }
+
     // Search query
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
-      const matchName = p.name.toLowerCase().includes(q);
-      const matchBreed = p.breed.toLowerCase().includes(q);
+      const matchName = (p.name || '').toLowerCase().includes(q);
+      const matchBreed = (p.breed || '').toLowerCase().includes(q);
       if (!matchName && !matchBreed) return false;
     }
+
     return true;
   });
 
@@ -65,7 +105,7 @@ export default function PuppiesPage() {
         {/* Filter Bar */}
         <PuppyFilterBar 
           selectedBreed={selectedBreed}
-          onSelectBreed={setSelectedBreed}
+          onSelectBreed={handleBreedChange}
           selectedStatus={selectedStatus}
           onSelectStatus={setSelectedStatus}
           searchQuery={searchQuery}
@@ -88,7 +128,7 @@ export default function PuppiesPage() {
             <p style={{ color: 'var(--color-cocoa-soft)', marginTop: '0.5rem' }}>Try selecting "All Breeds" or clearing your search term.</p>
             <button 
               type="button" 
-              onClick={() => { setSelectedBreed('all'); setSelectedStatus('all'); setSearchQuery(''); }}
+              onClick={() => { handleBreedChange('all'); setSelectedStatus('all'); setSearchQuery(''); }}
               className="btn btn-outline"
               style={{ marginTop: '1.25rem' }}
             >

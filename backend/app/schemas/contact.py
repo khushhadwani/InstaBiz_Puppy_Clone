@@ -1,11 +1,11 @@
-from pydantic import BaseModel, EmailStr, Field, ConfigDict
+from pydantic import BaseModel, Field, ConfigDict
 from typing import Optional
 from datetime import datetime
 
 class ContactLetterCreateSchema(BaseModel):
     sender_name: str = Field(..., min_length=2, max_length=150)
     phone: str = Field(..., min_length=6, max_length=50)
-    email: EmailStr
+    email: str
     city: str = Field(..., min_length=2, max_length=100)
     puppy_interest: Optional[str] = "any puppy"
     letter_text: Optional[str] = ""

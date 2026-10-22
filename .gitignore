@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+frontend/dist/
+frontend/.vite/
+backend/__pycache__/
+backend/*.pyc
+backend/.pytest_cache/
+
+# Environment files
+.env
+.env.local
+.env.production
+frontend/.env
+backend/.env
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Python
+*.egg-info/
+venv/
+.venv/
+__pycache__/
+
+# Logs
+*.log
+npm-debug.log*
+
+# SQLite Databases
+*.db
+*.sqlite
+*.sqlite3

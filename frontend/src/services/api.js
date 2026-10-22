@@ -21,13 +21,26 @@ export async function getPuppies(params = {}) {
   // Fallback to local data
   let filtered = [...localPuppies];
   if (params.breed && params.breed.toLowerCase() !== 'all') {
-    filtered = filtered.filter(p => p.breed.toLowerCase().includes(params.breed.toLowerCase()));
+    const qBreed = params.breed.toLowerCase();
+    filtered = filtered.filter(p => {
+      const b = (p.breed || '').toLowerCase();
+      const slug = (p.slug || '').toLowerCase();
+      const name = (p.name || '').toLowerCase();
+      const breedSlugs = (p.breeds || []).map(br => (br.slug || '').toLowerCase());
+      if (qBreed === 'korean-teacup') {
+        return b.includes('korean') || slug.includes('korean') || name.includes('korean');
+      }
+      if (qBreed === 'shih-tzu') {
+        return b.includes('shih') || b.includes('shitzu') || slug.includes('shitzu') || breedSlugs.includes('shih-tzu');
+      }
+      return b.includes(qBreed) || slug.includes(qBreed) || breedSlugs.includes(qBreed);
+    });
   }
   if (params.gender && params.gender.toLowerCase() !== 'all') {
-    filtered = filtered.filter(p => p.gender.toLowerCase() === params.gender.toLowerCase());
+    filtered = filtered.filter(p => (p.gender || '').toLowerCase() === params.gender.toLowerCase());
   }
   if (params.status && params.status.toLowerCase() !== 'all') {
-    filtered = filtered.filter(p => p.status.toLowerCase() === params.status.toLowerCase());
+    filtered = filtered.filter(p => (p.status || '').toLowerCase() === params.status.toLowerCase());
   }
   return filtered;
 }

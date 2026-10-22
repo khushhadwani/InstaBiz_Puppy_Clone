@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr, Field, ConfigDict
+from pydantic import BaseModel, Field, ConfigDict
 from typing import Optional
 from datetime import datetime
 
@@ -7,7 +7,7 @@ class InquiryCreateSchema(BaseModel):
     puppy_name: Optional[str] = None
     customer_name: str = Field(..., min_length=2, max_length=150)
     phone: str = Field(..., min_length=6, max_length=50)
-    email: EmailStr
+    email: str
     city: Optional[str] = "Dubai"
     message: Optional[str] = ""
 
